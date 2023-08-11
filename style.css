@@ -1,0 +1,78 @@
+body{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0%;
+    background: rgb(0, 0, 0);
+    background-image: url(https://source.unsplash.com/random/900×1600/?landscape);
+    background-repeat:round;
+    font-family: 'Times New Roman', Times, serif;
+    
+    
+}
+.card{
+    font-size: 120%;
+    background-color:rgba(0, 0, 0, 0.733);
+    color: white;
+    padding: 2%;
+    border-radius: 5%;
+    margin: 2%;
+    width: 100%;
+    max-width: 380px;
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    margin: 2%;
+    border-radius: 60%;
+    border: none;
+    height: 35px;
+    width: 35px;
+    outline: none;
+    background: rgba(0, 0, 0, 0.801);
+    color: white;
+    cursor: pointer;
+}
+input.search-bar{
+    padding: 5px 15px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    background: rgba(0, 0, 0, 0.801);
+    color: white;
+    font-family: inherit;
+    width: 90%;
+}
+button:hover{
+    background-color: rgba(128, 128, 128, 0.548);
+}
+h1.temp{
+    margin: 0%;
+    margin-bottom: 2%;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.description{
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+.weather.loading{
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+.weather.loading::after{
+    visibility: visible;
+    content: "loading....";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
